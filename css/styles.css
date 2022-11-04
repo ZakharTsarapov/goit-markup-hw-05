@@ -50,7 +50,7 @@ img {
     --clients: #AFB1B8;
     --bg-social: rgba(255, 255, 255, 0.1);
     --modal-bg: rgba(0, 0, 0, 0.2);
-    
+
 }
 
 
@@ -161,12 +161,29 @@ h5 {
 
 
 .head-text {
+    display: block;
     color: var(--primary-text-color);
     padding: 32px 0;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.nav-item {
+    position: relative;
+}
+
+.current:after {
+    position: absolute;
+    display: block;
+    left: 0%;
+    bottom: 0%;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
 
 
 .menu-nav .head-text.current {
@@ -305,7 +322,7 @@ ul>.mail {
     border: 0;
     padding: 10px 32px;
     border-radius: 4px;
-    
+
 }
 
 .hb {
